@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gastronomía | Chocó</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gastronomia.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header gastronomia-header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+
+        <div>
+            <h2>Chocó</h2>
+            <span>Descubre lo natural</span>
+        </div>
+
+    </div>
+
+
+    <nav class="nav">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="destinos.html">
+            Destinos
+        </a>
+
+        <a href="#">
+            Experiencias
+        </a>
+
+        <a href="#">
+            Hospedaje
+        </a>
+
+        <a href="gastronomia.html"
+           class="active">
+            Gastronomía
+        </a>
+
+       <a href="blog.html" class="active">Blog</a>
+
+        <a href="contacto.html">
+            Contacto
+        </a>
+
+    </nav>
+
+
+    <div class="header-icons">
+
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button onclick="abrirLogin()">
+            <i class="fa-regular fa-user"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="gastronomia-hero">
+
+    <div class="gastronomia-overlay">
+
+        <div class="gastronomia-title">
+
+            <h1>
+                Sabores del Chocó
+            </h1>
+
+            <p>
+                Una ruta gastronómica que celebra
+                la tradición, la cultura y la
+                diversidad de nuestra tierra.
+            </p>
+
+        </div>
+
+
+        <!-- ================= BUSCADOR ================= -->
+
+        <div class="food-search">
+
+            <div class="food-search-title">
+
+                <i class="fa-solid fa-utensils"></i>
+
+                <div>
+
+                    <strong>
+                        ¿Qué quieres probar hoy?
+                    </strong>
+
+                    <span>
+                        Descubre los sabores tradicionales del Chocó.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="food-input">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="buscadorComida"
+                    placeholder="Buscar platos, bebidas o restaurantes..."
+                    onkeyup="filtrarComida()">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CATEGORÍAS ================= -->
+
+<section class="categorias">
+
+    <button class="categoria active"
+            onclick="filtrarCategoria('todos', this)">
+
+        <i class="fa-solid fa-table-cells-large"></i>
+
+        Todos
+
+    </button>
+
+
+    <button class="categoria"
+            onclick="filtrarCategoria('plato', this)">
+
+        <i class="fa-solid fa-utensils"></i>
+
+        Platos típicos
+
+    </button>
+
+
+    <button class="categoria"
+            onclick="filtrarCategoria('bebida', this)">
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        Bebidas
+
+    </button>
+
+
+    <button class="categoria"
+            onclick="filtrarCategoria('postre', this)">
+
+        <i class="fa-solid fa-cake-candles"></i>
+
+        Postres
+
+    </button>
+
+
+    <button class="categoria"
+            onclick="filtrarCategoria('restaurante', this)">
+
+        <i class="fa-solid fa-store"></i>
+
+        Restaurantes
+
+    </button>
+
+
+    <button class="categoria"
+            onclick="filtrarCategoria('mercado', this)">
+
+        <i class="fa-solid fa-basket-shopping"></i>
+
+        Mercados locales
+
+    </button>
+
+</section>
+
+
+
+<!-- ================= CONTENIDO ================= -->
+
+<section class="gastronomia-section">
+
+    <div class="comida-grid">
+
+
+
+        <!-- =================================================
+             PESCADO EN TAPAO
+             ================================================= -->
+
+        <article class="comida-card"
+                 data-categoria="plato"
+                 data-nombre="pescado en tapao">
+
+            <div class="comida-image">
+
+                <!--
+                    IMAGEN TEMPORAL.
+                    Puedes reemplazar esta ruta por tu propia imagen.
+                -->
+
+                <img
+                    src="img/sancocho.jpg"
+                    alt="Pescado en Tapao">
+
+                <span class="comida-label azul">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                    Plato típico
+
+                </span>
+
+            </div>
+
+
+            <div class="comida-info">
+
+                <h2>
+                    Pescado en Tapao
+                </h2>
+
+                <div class="ubicacion-comida">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+                <p>
+                    Un plato tradicional preparado
+                    con pescado y plátano, que
+                    representa los sabores del
+                    Pacífico colombiano.
+                </p>
+
+                <button class="ver-mas"
+                        onclick="mostrarInfo('Pescado en Tapao')">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             SANCOCHO DE PESCADO
+             ================================================= -->
+
+        <article class="comida-card"
+                 data-categoria="plato"
+                 data-nombre="sancocho de pescado">
+
+            <div class="comida-image">
+
+                <img
+                    src="img/sancochopescado.jpg"
+                    alt="Sancocho de Pescado">
+
+                <span class="comida-label naranja">
+
+                    <i class="fa-solid fa-bowl-food"></i>
+
+                    Plato típico
+
+                </span>
+
+            </div>
+
+
+            <div class="comida-info">
+
+                <h2>
+                    Sancocho de Pescado
+                </h2>
+
+                <div class="ubicacion-comida">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+                <p>
+                    Una sopa llena de tradición,
+                    preparada con pescado fresco,
+                    plátano, yuca y hierbas.
+                </p>
+
+                <button class="ver-mas"
+                        onclick="mostrarInfo('Sancocho de Pescado')">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PATACONES
+             ================================================= -->
+
+        <article class="comida-card"
+                 data-categoria="plato"
+                 data-nombre="patacones de platano">
+
+            <div class="comida-image">
+
+                <img
+                    src="img/patacones.jpg"
+                    alt="Patacones de Plátano">
+
+                <span class="comida-label verde">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    Acompañamiento
+
+                </span>
+
+            </div>
+
+
+            <div class="comida-info">
+
+                <h2>
+                    Patacones de Plátano
+                </h2>
+
+                <div class="ubicacion-comida">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+                <p>
+                    Crujientes y dorados,
+                    el complemento perfecto
+                    de la gastronomía del Pacífico.
+                </p>
+
+                <button class="ver-mas"
+                        onclick="mostrarInfo('Patacones de Plátano')">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             VICHE
+             ================================================= -->
+
+        <article class="comida-card"
+                 data-categoria="bebida"
+                 data-nombre="viche">
+
+            <div class="comida-image">
+
+                <img
+                    src="img/viche.jpg"
+                    alt="Viche">
+
+                <span class="comida-label cafe">
+
+                    <i class="fa-solid fa-wine-glass"></i>
+
+                    Bebida tradicional
+
+                </span>
+
+            </div>
+
+
+            <div class="comida-info">
+
+                <h2>
+                    Viche
+                </h2>
+
+                <div class="ubicacion-comida">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+                <p>
+                    Bebida tradicional del
+                    Pacífico colombiano,
+                    relacionada con la cultura
+                    y las tradiciones de la región.
+                </p>
+
+                <button class="ver-mas"
+                        onclick="mostrarInfo('Viche')">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             ARROZ DE CAMARONES
+             ================================================= -->
+
+        <article class="comida-card"
+                 data-categoria="plato"
+                 data-nombre="arroz de camarones">
+
+            <div class="comida-image">
+
+                <img
+                    src="img/arroz-camarones.jpg"
+                    alt="Arroz de Camarones">
+
+                <span class="comida-label azul">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                    Plato típico
+
+                </span>
+
+            </div>
+
+
+            <div class="comida-info">
+
+                <h2>
+                    Arroz de Camarones
+                </h2>
+
+                <div class="ubicacion-comida">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Pacífico colombiano
+
+                </div>
+
+                <p>
+                    Preparación con mariscos
+                    y sabores propios de la
+                    cocina del Pacífico.
+                </p>
+
+                <button class="ver-mas"
+                        onclick="mostrarInfo('Arroz de Camarones')">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             DULCES TRADICIONALES
+             ================================================= -->
+
+        <article class="comida-card"
+                 data-categoria="postre"
+                 data-nombre="dulce tradicional">
+
+            <div class="comida-image">
+
+                <img
+                    src="img/dulces.jpg"
+                    alt="Dulces Tradicionales">
+
+                <span class="comida-label rosa">
+
+                    <i class="fa-solid fa-cake-candles"></i>
+
+                    Postre
+
+                </span>
+
+            </div>
+
+
+            <div class="comida-info">
+
+                <h2>
+                    Dulces Tradicionales
+                </h2>
+
+                <div class="ubicacion-comida">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+                <p>
+                    Sabores dulces elaborados
+                    con ingredientes tradicionales
+                    de la región.
+                </p>
+
+                <button class="ver-mas"
+                        onclick="mostrarInfo('Dulces Tradicionales')">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BANNER ================= -->
+
+<section class="experiencia-banner">
+
+    <div class="banner-icon">
+
+        <i class="fa-solid fa-leaf"></i>
+
+    </div>
+
+
+    <div class="banner-text">
+
+        <h2>
+            Vive la experiencia completa
+        </h2>
+
+        <p>
+            Conoce restaurantes locales,
+            mercados y vive una ruta
+            gastronómica única en el Chocó.
+        </p>
+
+    </div>
+
+
+    <button onclick="descubrirSabores()">
+
+        Descubre más sabores
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </button>
+
+</section>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

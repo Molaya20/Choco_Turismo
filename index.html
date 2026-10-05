@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chocó | Descubre lo natural</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+
+            <div>
+                <h2>Chocó</h2>
+                <span>Descubre lo natural</span>
+            </div>
+        </div>
+
+        <nav class="nav">
+
+    <a href="index.html" class="active">Inicio</a>
+
+    <a href="destinos.html">Destinos</a>
+
+    <a href="#">Experiencias</a>
+
+    <a href="#">Hospedaje</a>
+
+    <a href="gastronomia.html">Gastronomía</a>
+
+    <a href="blog.html" class="active">Blog</a>
+
+    <a href="contacto.html">Contacto</a>
+
+</nav>
+
+        <div class="header-icons">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button onclick="abrirLogin()">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Descubre<br>
+                la magia del<br>
+                <span>Chocó</span>
+            </h1>
+
+            <p>
+                Naturaleza, cultura y aventura
+                en el corazón del Pacífico colombiano.
+            </p>
+
+            <a href="destinos.html" class="btn-primary">
+    Explora ahora
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+        </div>
+
+
+        <!-- Tarjeta ubicación -->
+
+        <div class="location-card">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+                <strong>Playa Huina, Bahía Solano</strong>
+                <p>Un paraíso natural por descubrir.</p>
+            </div>
+
+        </div>
+
+
+        <!-- ================= BUSCADOR ================= -->
+
+        <div class="search-box">
+
+            <div class="search-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <span>¿A dónde quieres ir?</span>
+                    <small>Destino</small>
+                </div>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <div>
+                    <span>Fecha</span>
+                    <small>Selecciona fecha</small>
+                </div>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+                    <span>Viajeros</span>
+                    <small>2 personas</small>
+                </div>
+
+            </div>
+
+
+            <a href="destinos.html" class="search-button">
+    Buscar
+</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARACTERÍSTICAS ================= -->
+
+    <section class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <div>
+                <h3>Naturaleza exuberante</h3>
+
+                <p>
+                    Playas, selvas, ríos y una
+                    biodiversidad única.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <i class="fa-solid fa-camera"></i>
+
+            <div>
+                <h3>Experiencias auténticas</h3>
+
+                <p>
+                    Vive la cultura y tradiciones
+                    del Chocó.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <i class="fa-solid fa-bed"></i>
+
+            <div>
+                <h3>Hospedajes para todos</h3>
+
+                <p>
+                    Opciones de alojamiento
+                    cómodas y seguras.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <i class="fa-solid fa-utensils"></i>
+
+            <div>
+                <h3>Gastronomía local</h3>
+
+                <p>
+                    Sabores tradicionales
+                    que te encantarán.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <i class="fa-solid fa-shield-heart"></i>
+
+            <div>
+                <h3>Turismo responsable</h3>
+
+                <p>
+                    Cuidamos lo nuestro, para
+                    que lo disfrutes siempre.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REGISTRO ================= -->
+
+    <section class="register">
+
+        <div class="register-icon">
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+        <div>
+
+            <h3>Únete y recibe ventajas exclusivas</h3>
+
+            <p>
+                Regístrate gratis y accede a descuentos,
+                recomendaciones personalizadas y mucho más.
+            </p>
+
+        </div>
+
+        <button onclick="abrirLogin()">
+            Iniciar sesión / Registrarse
+        </button>
+
+    </section>
+
+
+    <!-- ================= LOGIN ================= -->
+
+    <div id="loginModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="cerrarLogin()">
+                &times;
+            </button>
+
+            <h2>Bienvenido al Chocó</h2>
+
+            <p>Inicia sesión para continuar</p>
+
+            <input type="email" placeholder="Correo electrónico">
+
+            <input type="password" placeholder="Contraseña">
+
+            <button class="login-button">
+                Iniciar sesión
+            </button>
+
+            <span class="register-text">
+                ¿No tienes una cuenta?
+                <b>Regístrate</b>
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

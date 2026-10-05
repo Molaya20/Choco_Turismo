@@ -1,0 +1,777 @@
+/* =====================================================
+   HERO GASTRONOMÍA
+===================================================== */
+
+.gastronomia-hero {
+
+    height: 315px;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.62),
+            rgba(0,0,0,.20)
+        ),
+        url("img/pastel-arroz.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+
+.gastronomia-overlay {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    padding-top: 55px;
+}
+
+
+.gastronomia-title {
+
+    max-width: 650px;
+}
+
+
+.gastronomia-title h1 {
+
+    font-size: 64px;
+
+    margin-bottom: 8px;
+
+    line-height: 1.05;
+}
+
+
+.gastronomia-title p {
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    max-width: 650px;
+}
+
+
+
+/* =====================================================
+   BUSCADOR
+===================================================== */
+
+.food-search {
+
+    width: 440px;
+
+    background:
+        rgba(0,35,27,.78);
+
+    backdrop-filter: blur(8px);
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+}
+
+
+.food-search-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.food-search-title > i {
+
+    font-size: 35px;
+}
+
+
+.food-search-title strong {
+
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.food-search-title span {
+
+    display: block;
+
+    font-size: 13px;
+}
+
+
+.food-input {
+
+    background: white;
+
+    border-radius: 30px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 18px;
+
+    color: #65706d;
+}
+
+
+.food-input i {
+
+    font-size: 18px;
+
+    margin-right: 12px;
+}
+
+
+.food-input input {
+
+    border: none;
+
+    outline: none;
+
+    width: 100%;
+
+    font-size: 14px;
+}
+
+
+
+/* =====================================================
+   CATEGORÍAS
+===================================================== */
+
+.categorias {
+
+    padding: 25px 7%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    background: white;
+}
+
+
+.categoria {
+
+    border: 1px solid #dce5e1;
+
+    background: white;
+
+    color: #1d2e2a;
+
+    padding: 14px 28px;
+
+    border-radius: 28px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .3s;
+}
+
+
+.categoria i {
+
+    color: #087c59;
+
+    font-size: 19px;
+}
+
+
+.categoria:hover {
+
+    border-color: #087c59;
+
+    color: #087c59;
+
+}
+
+
+.categoria.active {
+
+    background: #087c59;
+
+    color: white;
+
+    border-color: #087c59;
+}
+
+
+.categoria.active i {
+
+    color: white;
+}
+
+
+
+/* =====================================================
+   SECCIÓN COMIDA
+===================================================== */
+
+.gastronomia-section {
+
+    padding: 0 2.7% 30px;
+
+}
+
+
+.comida-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+
+.comida-card {
+
+    border: 1px solid #e1e8e5;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: white;
+
+    transition: .3s;
+}
+
+
+.comida-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.12);
+}
+
+
+.comida-image {
+
+    height: 245px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.comida-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s;
+}
+
+
+.comida-card:hover
+.comida-image img {
+
+    transform: scale(1.07);
+}
+
+
+
+/* =====================================================
+   ETIQUETAS
+===================================================== */
+
+.comida-label {
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 18px;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+}
+
+
+.azul {
+
+    background: #159dcc;
+}
+
+
+.naranja {
+
+    background: #f6a019;
+}
+
+
+.verde {
+
+    background: #20ad6c;
+}
+
+
+.cafe {
+
+    background: #8b591f;
+}
+
+
+.rosa {
+
+    background: #c85b75;
+}
+
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.comida-info {
+
+    padding: 16px 18px 18px;
+}
+
+
+.comida-info h2 {
+
+    color: #092653;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.ubicacion-comida {
+
+    color: #68757c;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+
+.ubicacion-comida i {
+
+    color: #087c59;
+
+    margin-right: 8px;
+}
+
+
+.comida-info p {
+
+    color: #59656e;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    min-height: 68px;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* =====================================================
+   BOTÓN VER MÁS
+===================================================== */
+
+.ver-mas {
+
+    border: none;
+
+    background: #e1f3ec;
+
+    color: #087c59;
+
+    border-radius: 25px;
+
+    padding: 11px 25px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+.ver-mas i {
+
+    margin-left: 12px;
+}
+
+
+.ver-mas:hover {
+
+    background: #087c59;
+
+    color: white;
+}
+
+
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.experiencia-banner {
+
+    margin: 20px 4.5% 40px;
+
+    padding: 20px 35px;
+
+    background: #e7f5f0;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.banner-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.banner-icon i {
+
+    color: #087c59;
+
+    font-size: 30px;
+}
+
+
+.banner-text {
+
+    flex: 1;
+}
+
+
+.banner-text h2 {
+
+    margin-bottom: 5px;
+
+    font-size: 20px;
+}
+
+
+.banner-text p {
+
+    color: #59656e;
+
+    font-size: 15px;
+}
+
+
+.experiencia-banner button {
+
+    border: none;
+
+    background: #076b4d;
+
+    color: white;
+
+    padding: 17px 25px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.experiencia-banner button i {
+
+    margin-left: 12px;
+}
+
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.food-modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(0,0,0,.65);
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.food-modal-content {
+
+    width: 420px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+.cerrar-modal {
+
+    position: absolute;
+
+    right: 18px;
+
+    top: 10px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+.modal-icon {
+
+    font-size: 40px;
+
+    color: #087c59;
+
+    margin-bottom: 15px;
+}
+
+
+.food-modal-content h2 {
+
+    color: #092653;
+
+    margin-bottom: 15px;
+}
+
+
+.food-modal-content p {
+
+    color: #65706d;
+
+    line-height: 1.5;
+}
+
+
+.modal-button {
+
+    margin-top: 25px;
+
+    border: none;
+
+    background: #087c59;
+
+    color: white;
+
+    padding: 12px 30px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width: 1200px) {
+
+    .comida-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .gastronomia-title h1 {
+
+        font-size: 50px;
+    }
+
+}
+
+
+@media(max-width: 900px) {
+
+    .gastronomia-overlay {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .gastronomia-hero {
+
+        height: 550px;
+    }
+
+
+    .food-search {
+
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+
+    .comida-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .categorias {
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .gastronomia-title h1 {
+
+        font-size: 40px;
+    }
+
+
+    .gastronomia-title p {
+
+        font-size: 16px;
+    }
+
+
+    .comida-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .experiencia-banner {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .experiencia-banner button {
+
+        width: 100%;
+    }
+
+}

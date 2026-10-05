@@ -1,0 +1,1050 @@
+/* ==================================================
+   DESTINOS
+================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: #ffffff;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.destinos-header {
+    height: 92px;
+    padding: 0 7%;
+    position: absolute;
+    z-index: 20;
+}
+
+.destinos-header .logo {
+    gap: 10px;
+}
+
+.destinos-header .logo-icon {
+    font-size: 38px;
+}
+
+.destinos-header .logo h2 {
+    font-size: 29px;
+    line-height: 1;
+}
+
+.destinos-header .logo span {
+    font-size: 13px;
+    display: block;
+    margin-top: 4px;
+}
+
+.destinos-header .nav {
+    gap: 36px;
+}
+
+.destinos-header .nav a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.destinos-header .header-icons {
+    gap: 22px;
+}
+
+.destinos-header .header-icons button {
+    font-size: 23px;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.destinos-hero {
+    height: 318px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    color: white;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.08)
+        ),
+        url("img/choco.jpg");
+
+    background-size: cover;
+
+    background-position: center 45%;
+}
+
+
+.destinos-overlay {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+
+/* ==================================================
+   TEXTO HERO
+================================================== */
+
+.destinos-content {
+    position: absolute;
+
+    left: 7%;
+    bottom: 43px;
+
+    max-width: 620px;
+}
+
+
+.destinos-content h1 {
+    color: white;
+
+    font-size: 62px;
+
+    line-height: 1;
+
+    margin: 0 0 12px;
+
+    font-weight: 700;
+}
+
+
+.destinos-content p {
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    max-width: 600px;
+
+    margin: 0;
+}
+
+
+/* ==================================================
+   BUSCADOR DEL HERO
+================================================== */
+
+.destinos-search-card {
+    position: absolute;
+
+    right: 7%;
+    bottom: 36px;
+
+    width: 430px;
+
+    padding: 26px 28px;
+
+    background: rgba(7, 28, 36, 0.78);
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 18px;
+}
+
+
+.search-card-title {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 17px;
+
+    margin-bottom: 18px;
+}
+
+
+.search-card-title > i {
+    color: white;
+
+    font-size: 29px;
+
+    margin-top: 1px;
+}
+
+
+.search-card-title strong {
+    display: block;
+
+    color: white;
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+.search-card-title span {
+    display: block;
+
+    color: #e3e9eb;
+
+    font-size: 13px;
+}
+
+
+.destinos-search {
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 20px;
+
+    background: white;
+
+    border-radius: 25px;
+}
+
+
+.destinos-search i {
+    color: #52636a;
+
+    font-size: 20px;
+}
+
+
+.destinos-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #25353b;
+
+    font-size: 13px;
+}
+
+
+.destinos-search input::placeholder {
+    color: #68767d;
+}
+
+
+/* ==================================================
+   FILTROS
+================================================== */
+
+.destinos-filtros {
+    width: 100%;
+
+    padding: 24px 20px 27px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background: white;
+}
+
+
+.filtro {
+    height: 51px;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border: 1px solid #d9e0e3;
+
+    border-radius: 28px;
+
+    background: white;
+
+    color: #172c40;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.filtro i {
+    color: #087c59;
+
+    font-size: 18px;
+}
+
+
+.filtro:hover {
+    border-color: #087c59;
+
+    transform: translateY(-2px);
+}
+
+
+.filtro.active {
+    background: #087c59;
+
+    border-color: #087c59;
+
+    color: white;
+}
+
+
+.filtro.active i {
+    color: white;
+}
+
+
+/* ==================================================
+   SECCION DESTINOS
+================================================== */
+
+.destinos-section {
+    padding: 0 2.7% 20px;
+
+    background: white;
+}
+
+
+.destinos-grid {
+    width: 100%;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+/* ==================================================
+   TARJETAS
+================================================== */
+
+.destino-card {
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid #e2e7e9;
+
+    border-radius: 13px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.03);
+
+    transition: 0.3s;
+}
+
+
+.destino-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==================================================
+   IMAGEN
+================================================== */
+
+.destino-image {
+    height: 263px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.destino-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+
+.destino-card:hover .destino-image img {
+    transform: scale(1.04);
+}
+
+
+/* ==================================================
+   CATEGORIA SOBRE IMAGEN
+================================================== */
+
+.destino-category {
+    position: absolute;
+
+    top: 19px;
+    left: 20px;
+
+    z-index: 3;
+
+    min-height: 37px;
+
+    padding: 0 17px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border-radius: 22px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.destino-category i {
+    font-size: 15px;
+}
+
+
+.category-playas {
+    background: #0796d4;
+}
+
+
+.category-rios {
+    background: #35945d;
+}
+
+
+.category-naturaleza {
+    background: #35945d;
+}
+
+
+.category-aventura {
+    background: #f5a900;
+}
+
+
+/* ==================================================
+   INFORMACION
+================================================== */
+
+.destino-info {
+    min-height: 217px;
+
+    padding: 12px 18px 13px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.destino-info h3 {
+    color: #102846;
+
+    font-size: 24px;
+
+    line-height: 1.15;
+
+    margin: 0 0 7px;
+
+    font-weight: 700;
+}
+
+
+.destino-place {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: #68737e;
+
+    font-size: 15px;
+}
+
+
+.destino-place i {
+    color: #188c63;
+
+    font-size: 17px;
+}
+
+
+.destino-info p {
+    color: #4c5863;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    margin: 0 0 12px;
+
+    min-height: 64px;
+}
+
+
+/* ==================================================
+   BOTON VER MAS
+================================================== */
+
+.destino-link {
+    width: 149px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: auto;
+
+    border-radius: 24px;
+
+    background: #dff2eb;
+
+    color: #056b51;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+
+.destino-link i {
+    font-size: 17px;
+
+    transition: 0.25s;
+}
+
+
+.destino-link:hover {
+    background: #087c59;
+
+    color: white;
+}
+
+
+.destino-link:hover i {
+    transform: translateX(4px);
+}
+
+
+/* ==================================================
+   SIN RESULTADOS
+================================================== */
+
+.sin-resultados {
+    display: none;
+
+    max-width: 500px;
+
+    margin: 25px auto;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #68737e;
+
+    background: #f5f8f7;
+
+    border-radius: 12px;
+}
+
+
+/* ==================================================
+   CTA
+================================================== */
+
+.destinos-cta {
+    margin: 20px auto 40px;
+
+    width: 91%;
+
+    max-width: 1390px;
+
+    min-height: 90px;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: #e6f5f0;
+
+    border-radius: 23px;
+}
+
+
+.cta-icon {
+    width: 65px;
+
+    min-width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: transparent;
+
+    color: #087c59;
+
+    font-size: 40px;
+}
+
+
+.cta-content {
+    flex: 1;
+}
+
+
+.cta-content h2 {
+    color: #101820;
+
+    font-size: 21px;
+
+    margin: 0 0 4px;
+}
+
+
+.cta-content p {
+    color: #42535b;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    margin: 0;
+}
+
+
+.cta-button {
+    min-width: 230px;
+
+    height: 49px;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    border-radius: 15px;
+
+    background: #087c59;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+
+.cta-button:hover {
+    background: #075f45;
+
+    transform: translateY(-2px);
+}
+
+
+.cta-button i {
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    background: #075f45;
+
+    color: white;
+
+    padding: 25px 7%;
+}
+
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-bottom p {
+    color: rgba(255,255,255,0.75);
+
+    font-size: 13px;
+}
+
+
+.footer-socials {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.footer-socials a {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.footer-socials a:hover {
+    background: #24c98b;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1200px) {
+
+    .destinos-header .nav {
+        gap: 18px;
+    }
+
+    .destinos-header .nav a {
+        font-size: 14px;
+    }
+
+    .destinos-content h1 {
+        font-size: 52px;
+    }
+
+    .destinos-search-card {
+        width: 390px;
+    }
+
+    .destinos-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .destino-image {
+        height: 270px;
+    }
+
+}
+
+
+/* ==================================================
+   TABLET PEQUENO
+================================================== */
+
+@media (max-width: 900px) {
+
+    .destinos-header {
+        padding: 0 4%;
+    }
+
+    .destinos-header .nav {
+        display: none;
+    }
+
+    .destinos-search-card {
+        right: 4%;
+        width: 360px;
+    }
+
+    .destinos-content {
+        left: 4%;
+    }
+
+    .destinos-filtros {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 700px) {
+
+    .destinos-header {
+        height: 75px;
+
+        padding: 0 20px;
+    }
+
+    .destinos-header .logo h2 {
+        font-size: 23px;
+    }
+
+    .destinos-header .logo span {
+        font-size: 11px;
+    }
+
+    .destinos-header .logo-icon {
+        font-size: 30px;
+    }
+
+    .destinos-header .header-icons {
+        gap: 13px;
+    }
+
+    .destinos-header .header-icons button {
+        font-size: 20px;
+    }
+
+
+    .destinos-hero {
+        height: 550px;
+
+        align-items: flex-start;
+    }
+
+
+    .destinos-content {
+        left: 25px;
+
+        right: 25px;
+
+        bottom: auto;
+
+        top: 135px;
+    }
+
+
+    .destinos-content h1 {
+        font-size: 43px;
+
+        line-height: 1.05;
+    }
+
+
+    .destinos-content p {
+        font-size: 17px;
+
+        line-height: 1.4;
+    }
+
+
+    .destinos-search-card {
+        left: 20px;
+
+        right: 20px;
+
+        bottom: 25px;
+
+        width: auto;
+
+        padding: 20px;
+    }
+
+
+    .destinos-search {
+        height: 44px;
+    }
+
+
+    .destinos-filtros {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        padding: 18px 20px;
+
+        scrollbar-width: none;
+    }
+
+
+    .destinos-filtros::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .filtro {
+        flex-shrink: 0;
+
+        height: 45px;
+
+        padding: 0 19px;
+
+        font-size: 13px;
+    }
+
+
+    .destinos-section {
+        padding: 0 20px 15px;
+    }
+
+
+    .destinos-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .destino-image {
+        height: 250px;
+    }
+
+
+    .destino-info {
+        min-height: 210px;
+    }
+
+
+    .destinos-cta {
+        width: calc(100% - 40px);
+
+        margin: 20px;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .cta-button {
+        width: 100%;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+}
+
+
+/* ==================================================
+   CELULAR PEQUENO
+================================================== */
+
+@media (max-width: 450px) {
+
+    .destinos-content h1 {
+        font-size: 36px;
+    }
+
+
+    .destinos-content p {
+        font-size: 15px;
+    }
+
+
+    .search-card-title strong {
+        font-size: 14px;
+    }
+
+
+    .search-card-title span {
+        font-size: 11px;
+    }
+
+
+    .destino-image {
+        height: 220px;
+    }
+
+
+    .destino-info h3 {
+        font-size: 22px;
+    }
+
+}

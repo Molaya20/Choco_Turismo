@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Destinos | Chocó | Descubre lo natural</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="destinos.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header destinos-header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+
+        <div>
+            <h2>Chocó</h2>
+            <span>Descubre lo natural</span>
+        </div>
+
+    </div>
+
+
+    <nav class="nav">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="destinos.html" class="active">
+            Destinos
+        </a>
+
+        <a href="#">
+            Experiencias
+        </a>
+
+        <a href="#">
+            Hospedaje
+        </a>
+
+        <a href="gastronomia.html">
+            Gastronomía
+        </a>
+
+        <a href="blog.html" class="active">Blog</a>
+
+        <a href="contacto.html">
+            Contacto
+        </a>
+
+    </nav>
+
+
+    <div class="header-icons">
+
+        <button class="search-header-button" aria-label="Buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button onclick="abrirLogin()" aria-label="Usuario">
+            <i class="fa-regular fa-user"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="destinos-hero">
+
+    <div class="destinos-overlay">
+
+        <div class="destinos-content">
+
+            <h1>
+                Destinos del Chocó
+            </h1>
+
+            <p>
+                Lugares únicos donde la naturaleza, la cultura y la aventura
+                se unen para crear experiencias inolvidables.
+            </p>
+
+        </div>
+
+
+        <div class="destinos-search-card">
+
+            <div class="search-card-title">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+
+                    <strong>
+                        ¿Qué destino quieres explorar?
+                    </strong>
+
+                    <span>
+                        Descubre playas, ríos, selvas y mucho más...
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="destinos-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="destinoSearch"
+                    placeholder="Buscar destinos en el Chocó..."
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FILTROS ================= -->
+
+<section class="destinos-filtros">
+
+    <button class="filtro active" data-filter="todos">
+
+        <i class="fa-solid fa-grip"></i>
+
+        Todos
+
+    </button>
+
+
+    <button class="filtro" data-filter="playas">
+
+        <i class="fa-solid fa-water"></i>
+
+        Playas
+
+    </button>
+
+
+    <button class="filtro" data-filter="rios">
+
+        <i class="fa-solid fa-mountain"></i>
+
+        Ríos y Cascadas
+
+    </button>
+
+
+    <button class="filtro" data-filter="naturaleza">
+
+        <i class="fa-solid fa-tree"></i>
+
+        Naturaleza
+
+    </button>
+
+
+    <button class="filtro" data-filter="cultura">
+
+        <i class="fa-solid fa-star"></i>
+
+        Cultura
+
+    </button>
+
+
+    <button class="filtro" data-filter="aventura">
+
+        <i class="fa-solid fa-camera"></i>
+
+        Aventura
+
+    </button>
+
+</section>
+
+
+
+<!-- ================= DESTINOS ================= -->
+
+<section class="destinos-section" id="destinos-lista">
+
+
+    <div class="destinos-grid">
+
+
+        <!-- BAHÍA SOLANO -->
+
+        <article
+            class="destino-card"
+            data-category="playas"
+            data-name="bahia solano"
+        >
+
+            <div class="destino-image">
+
+                <img
+                    src="img/bahia-solano.jpg"
+                    alt="Bahía Solano, Chocó"
+                >
+
+                <span class="destino-category category-playas">
+
+                    <i class="fa-solid fa-water"></i>
+
+                    Playas
+
+                </span>
+
+            </div>
+
+
+            <div class="destino-info">
+
+                <h3>
+                    Bahía Solano
+                </h3>
+
+
+                <div class="destino-place">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+
+                <p>
+                    Paraíso natural con playas cristalinas,
+                    vida marina única y paisajes que te
+                    dejarán sin aliento.
+                </p>
+
+
+                <a href="#" class="destino-link">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- CASCADAS -->
+
+        <article
+            class="destino-card"
+            data-category="rios"
+            data-name="cascadas del choco"
+        >
+
+            <div class="destino-image">
+
+                <img
+                    src="img/cascadas-choco.jpg"
+                    alt="Cascadas del Chocó"
+                >
+
+                <span class="destino-category category-rios">
+
+                    <i class="fa-solid fa-mountain"></i>
+
+                    Ríos y Cascadas
+
+                </span>
+
+            </div>
+
+
+            <div class="destino-info">
+
+                <h3>
+                    Cascadas del Chocó
+                </h3>
+
+
+                <div class="destino-place">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+
+                <p>
+                    Aguas cristalinas en medio de la selva,
+                    un lugar perfecto para conectar con
+                    la naturaleza.
+                </p>
+
+
+                <a href="#" class="destino-link">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MANGLARES -->
+
+        <article
+            class="destino-card"
+            data-category="naturaleza"
+            data-name="manglares del choco"
+        >
+
+            <div class="destino-image">
+
+                <img
+                    src="img/manglares-choco.jpg"
+                    alt="Manglares del Chocó"
+                >
+
+                <span class="destino-category category-naturaleza">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    Naturaleza
+
+                </span>
+
+            </div>
+
+
+            <div class="destino-info">
+
+                <h3>
+                    Manglares del Chocó
+                </h3>
+
+
+                <div class="destino-place">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chocó
+
+                </div>
+
+
+                <p>
+                    Ecosistemas mágicos que te invitan
+                    a explorar la biodiversidad de nuestra
+                    región.
+                </p>
+
+
+                <a href="#" class="destino-link">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PLAYA HUINA -->
+
+        <article
+            class="destino-card"
+            data-category="aventura"
+            data-name="playa huina"
+        >
+
+            <div class="destino-image">
+
+                <img
+                    src="img/playa-huina.jpg"
+                    alt="Playa Huina, Bahía Solano"
+                >
+
+                <span class="destino-category category-aventura">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    Aventura
+
+                </span>
+
+            </div>
+
+
+            <div class="destino-info">
+
+                <h3>
+                    Playa Huina
+                </h3>
+
+
+                <div class="destino-place">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Bahía Solano
+
+                </div>
+
+
+                <p>
+                    Un rincón escondido con aguas turquesas,
+                    arena suave y una experiencia incomparable.
+                </p>
+
+
+                <a href="#" class="destino-link">
+
+                    Ver más
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div id="sinResultados" class="sin-resultados">
+
+        No encontramos destinos con esa búsqueda.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="destinos-cta">
+
+
+    <div class="cta-icon">
+
+        <i class="fa-solid fa-leaf"></i>
+
+    </div>
+
+
+    <div class="cta-content">
+
+        <h2>
+            ¿Listo para vivir el Chocó?
+        </h2>
+
+        <p>
+            Explora nuestros destinos y planifica tu próxima aventura
+            en el corazón del Pacífico colombiano.
+        </p>
+
+    </div>
+
+
+    <a
+        href="contacto.html"
+        class="cta-button"
+    >
+
+        Planifica tu viaje
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+    const filtros = document.querySelectorAll(".filtro");
+    const tarjetas = document.querySelectorAll(".destino-card");
+    const buscador = document.getElementById("destinoSearch");
+    const sinResultados = document.getElementById("sinResultados");
+
+    let filtroActual = "todos";
+
+
+    filtros.forEach(function(filtro) {
+
+        filtro.addEventListener("click", function() {
+
+            filtros.forEach(function(item) {
+                item.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            filtroActual = this.dataset.filter;
+
+            mostrarDestinos();
+
+        });
+
+    });
+
+
+    buscador.addEventListener("input", function() {
+
+        mostrarDestinos();
+
+    });
+
+
+    function mostrarDestinos() {
+
+        const texto = buscador.value
+            .toLowerCase()
+            .trim();
+
+        let encontrados = 0;
+
+
+        tarjetas.forEach(function(tarjeta) {
+
+            const categoria = tarjeta.dataset.category;
+            const nombre = tarjeta.dataset.name;
+
+            const coincideCategoria =
+                filtroActual === "todos" ||
+                categoria === filtroActual;
+
+            const coincideBusqueda =
+                nombre.includes(texto);
+
+            if (coincideCategoria && coincideBusqueda) {
+
+                tarjeta.style.display = "block";
+
+                encontrados++;
+
+            } else {
+
+                tarjeta.style.display = "none";
+
+            }
+
+        });
+
+
+        if (encontrados === 0) {
+
+            sinResultados.style.display = "block";
+
+        } else {
+
+            sinResultados.style.display = "none";
+
+        }
+
+    }
+
+</script>
+
+
+</body>
+
+</html>
